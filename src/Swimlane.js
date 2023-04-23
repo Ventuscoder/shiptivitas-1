@@ -15,10 +15,11 @@ export default class Swimlane extends React.Component {
         />
       );
     })
+    const colName = this.props.name !== 'In-Progress' ? this.props.name.toLowerCase() : 'inProgress'
     return (
       <div className="Swimlane-column">
         <div className="Swimlane-title">{this.props.name}</div>
-        <div className="Swimlane-dragColumn" ref={this.props.dragulaRef}>
+        <div className={colName + ' ' + this.props.name + ' Swimlane-dragColumn'}>
           {cards}
         </div>
       </div>);
