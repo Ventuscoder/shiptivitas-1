@@ -1,0 +1,7 @@
+My process to crack this task:
+1. Understand the different functions and parameters of the Dragula module and implement it
+2. Organize the starting data given
+3. Determine the changes I need to make:
+    - Get hold of the data-status attribute
+    - Get hold of the CURRENT parent of a card once it gets dropped
+    - Set the classes based on the above, in order to change the color successfully

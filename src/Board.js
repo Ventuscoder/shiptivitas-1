@@ -40,7 +40,9 @@ export default class Board extends React.Component {
     ).on(
       'drop',
       (e, target) => {
+        // Get hold of the column the card lands in
         var currentCol = e.parentElement.classList[0]
+        // Mapping instead of if/else
         var valuesArr = {
           backlog: ['backlog', 'Card-grey'],
           inProgress: ['in-progress', 'Card-blue'],
@@ -52,6 +54,7 @@ export default class Board extends React.Component {
     )
   }
   getClients() {
+    // Move the data to a separate file
     return Data.map(companyDetails => ({
       id: companyDetails[0],
       name: companyDetails[1],

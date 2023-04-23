@@ -15,6 +15,7 @@ export default class Swimlane extends React.Component {
         />
       );
     })
+    // Correct bad prop values
     const colName = this.props.name !== 'In-Progress' ? this.props.name.toLowerCase() : 'inProgress'
     return (
       <div className="Swimlane-column">
